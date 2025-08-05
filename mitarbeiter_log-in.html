@@ -49,8 +49,12 @@
             const dienstnummer = document.getElementById('dienstnummer').value;
             const passwort = document.getElementById('passwort').value;
     
+            console.log("Dienstnummer from form:", dienstnummer); // Debugging line
+
             const validCredentials = await loadCredentials();
             const user = validCredentials[dienstnummer];
+
+            console.log("User object from credentials:", user); // Debugging line
             
             if (user) {
                 // SHA-256 Hash des eingegebenen Passworts
