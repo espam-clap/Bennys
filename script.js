@@ -542,7 +542,7 @@ function onlyOne(checkbox) {
 
 document.getElementById("sendenButton").addEventListener("click", () => {
     // 1. Auslesen der "Dienstnummer des Arbeiters" aus dem Element
-    const workerNumber = "00";
+    const workerNumber = localStorage.getItem("dienstnummer") || "Unbekannt";
 
     
 
@@ -619,8 +619,12 @@ document.getElementById("sendenButton").addEventListener("click", () => {
 });
 
 window.onload = function() {
-    const dienstnummer = "00"; // Hardcoded Dienstnummer
+    const dienstnummer = localStorage.getItem("dienstnummer"); // Auslesen der Dienstnummer
 
-    // Ersetzen des Platzhalters mit der Dienstnummer
-    document.querySelector('.dienstnummer-info').innerHTML = `Dienstnummer des Arbeiters: ${dienstnummer}`;
+    if (dienstnummer) {
+        // Ersetzen des Platzhalters mit der Dienstnummer
+        document.querySelector('.dienstnummer-info').innerHTML = `Dienstnummer des Arbeiters: ${dienstnummer}`;
+    } else {
+        console.error("Dienstnummer nicht gefunden.");
+    }
 };
