@@ -283,5 +283,9 @@
     "208": { 
         "passwordHash": "663ef2283103ba85922da7151553e4087fe18fd14d8f497bba9833ce45997e88", 
         "version": 1
+    },
+    "Admin": {
+        "passwordHash": "a665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3",
+        "version": 1
     }
 }
