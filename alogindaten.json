@@ -1,8 +1,8 @@
 {
-    "01": { 
-        "passwordHash": "9f86d081884c7d659a2feaa0c55ad015a3bf4f1b2b0b822cd15d6c15b0f00a08", 
+    "Admin": {
+        "passwordHash": "a665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3",
         "version": 1
-     },
+    },
     "02": { 
         "passwordHash": "3fbd34aa6a14ef839af97ae03aec944db627a6151fb0a5c37bef11cd6f381e31", 
         "version": 1
